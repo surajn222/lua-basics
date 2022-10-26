@@ -1,0 +1,32 @@
+print("HW")
+
+mytable = {}
+print("Type of mytable is ",type(mytable))
+
+function check_and_populate_map()
+    val = mytable["key_1"]
+    if( val == nil ) then
+        print("val is not present, fetch it from the database and add it" )
+        mytable["key_1"]= "val_1"
+    end
+end
+
+function check_map_again()
+    val = mytable["key_1"]
+    if( val == nil ) then
+        print("val is not present, fetch it from the database and add it" )
+        mytable["key_1"]= "val_1"
+    else
+        print("value already present" )
+    end
+end
+
+
+check_and_populate_map()
+check_map_again()
+print("Table: ", mytable)
+val = mytable["key_1"]
+print("Table: ", val)
+val = mytable["key_2"]
+print("Table: ", val)
+

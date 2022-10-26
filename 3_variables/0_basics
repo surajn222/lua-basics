@@ -1,0 +1,46 @@
+--nil variable
+nil_var = nil
+print(nil_var)
+
+--boolean variable
+bool_var = true
+print(bool_var)
+print(type(bool_var))
+bool_var = false
+print(bool_var)
+print(type(bool_var))
+
+--number variable
+num_var = 10
+print(num_var)
+print(type(num_var))
+
+--string variable
+str_var = "String_1"
+print(str_var)
+print(type(str_var))
+
+
+--table variable
+-- Simple empty table
+mytable = {}
+print("Type of mytable is ",type(mytable))
+mytable[1]= "Lua"
+print("mytable Element at index 1 is ", mytable[1])
+
+fruits = {"banana","orange","apple"}
+table.insert(fruits,"mango")
+print("Fruit at index 4 is ",fruits[4])
+
+fruits = {"banana","orange","apple","grapes"}
+
+for k,v in ipairs(fruits) do
+   print(k,v)
+end
+
+table.sort(fruits)
+print("sorted table")
+
+for k,v in ipairs(fruits) do
+   print(k,v)
+end
